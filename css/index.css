@@ -15,7 +15,7 @@
 }
 
 .container {
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -56,4 +56,29 @@
 }
 .header .navBar .menuList .menuItem button {
   color: #ffffff;
+}
+
+.hero {
+  width: 1920px;
+}
+
+.services {
+  width: 1920px;
+}
+.services .container {
+  margin: 0 auto;
+}
+.services .container .title {
+  font-size: 20px;
+}
+.services .container .servicesBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .container .servicesBox .servicesCard {
+  width: 522.13px;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+  border-radius: 5px;
 }

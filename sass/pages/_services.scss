@@ -1,0 +1,24 @@
+.services{
+    width: 1920px;
+    
+    .container{
+        margin: 0 auto;
+
+        .title{
+            font-size: 20px;
+        }
+
+        .servicesBox{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .servicesCard{
+                width: 522.13px;
+                border: 1px solid #00000050;
+                border-radius: 5px;
+            }
+        }
+    }
+}
