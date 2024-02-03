@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    background-color: $footerBg;
+
+    .container {
+        .footerTop {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .footerBottom {
+            .footerNavbar {
+                width: 100%;
+                display: flex;
+
+                .leftBox {
+                    display: flex;
+                }
+
+                .socialLinksList {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

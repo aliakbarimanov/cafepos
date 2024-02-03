@@ -4,28 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- FontAwesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/99e64b1514.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header id="header" class="header">
-      <nav class="navBar">
-        <ul class="navList">
-          <li class="navItem"><a href="#">Services</a></li>
-          <li class="navItem"><a href="#">Contact Us</a></li>
-          <li class="navItem"><a href="#">About</a></li>
-        </ul>
-        <a href="#" class="logo">CafePos</a>
-        <ul class="menuList">
-          <li class="menuItem">
-            <a href="#" target="_blank">+99 123 456 789</a>
-          </li>
-          <li class="menuItem"><a href="#">Help</a></li>
-          <li class="menuItem"><button>Sign In</button></li>
-          <li class="menuItem"><a href="#">Card</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="navBar">
+          <div class="mobileNavBar">
+            <div id="mobileMenu" class="mobileMenu">
+              <button id="closeBtn" class="closeBtn">Close menu</button>
+              <a href="#">Services</a>
+              <a href="#">Contact Us</a>
+              <a href="#">About</a>
+            </div>
+            <div class="mobileLeft">
+              <button id="barIcon" class="barIcon">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <a href="#" class="mobileLogo">
+                <span>Cafe</span>
+                <span>POS</span>
+              </a>
+            </div>
+            <div class="mobileRight">
+              <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+              <a href="#"><i class="fa-solid fa-phone"></i></a>
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <ul class="navList">
+            <li class="navItem"><a href="#">Services</a></li>
+            <li class="navItem"><a href="#">Contact Us</a></li>
+            <li class="navItem"><a href="#">About</a></li>
+          </ul>
+          <a href="#" class="logo">
+            <span>Cafe</span>
+            <span>POS</span>
+          </a>
+          <ul class="menuList">
+            <li class="menuItem">
+              <a class="menuLink" href="tel:+994705585488" class="phoneLink"
+                >+99 123 456 789</a
+              >
+            </li>
+            <li class="menuItem"><a class="menuLink" href="#">Help</a></li>
+            <li class="menuItem">
+              <button id="loginBtn" class="loginBtn">
+                <span>Sign In</span>
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </button>
+              <div id="loginBox" class="loginBox">
+                <div class="login">
+                  <span>Zaten bir hesabin varmi?</span>
+                  <a href="#">Log In</a>
+                </div>
+                <div class="registration">
+                  <span>Ilk defami kullaniyorsun?</span>
+                  <a href="#">Registration</a>
+                </div>
+              </div>
+            </li>
+            <li class="menuItem">
+              <a class="menuLink" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section class="hero">
+    <!-- <section id="hero" class="hero">
       <div class="container">
         <div class="heroDesc">asdds</div>
         <div class="heroImg">
@@ -33,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <h2 class="title">Services</h2>
         <div class="servicesBox">
@@ -42,27 +96,69 @@
             <button>Buy</button>
           </div>
           <div class="servicesCard">
-            <h3 class="cardTitle">Coffee shop</h3>
+            <h3 class="cardTitle">Compact Cafe</h3>
             <button>Buy</button>
           </div>
           <div class="servicesCard">
-            <h3 class="cardTitle">Coffee shop</h3>
+            <h3 class="cardTitle">Coffee House</h3>
             <button>Buy</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
-        <h2 class="title">
-          <div class="aboutCards">
-            <div class="aboutCard"></div>
-            <div class="aboutCard"></div>
-            <div class="aboutCard"></div>
-            <div class="aboutCard"></div>
-          </div>
-        </h2>
+        <h2 class="title">Why CafePOS</h2>
+        <div class="aboutCardList">
+          <div class="aboutCard"></div>
+          <div class="aboutCard"></div>
+          <div class="aboutCard"></div>
+          <div class="aboutCard"></div>
+        </div>
       </div>
     </section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footerTop">
+          <div class="footerBox">
+            <h3 class="title">Support</h3>
+            <ul class="boxList">
+              <li class="boxItem"><a href="#">First</a></li>
+              <li class="boxItem"><a href="#">First</a></li>
+              <li class="boxItem"><a href="#">First</a></li>
+              <li class="boxItem"><a href="#">First</a></li>
+            </ul>
+          </div>
+          <div class="footerBox">
+            <h3 class="title">Resources</h3>
+            <ul class="boxList">
+              <li class="boxItem"><a href="#">Second</a></li>
+              <li class="boxItem"><a href="#">Second</a></li>
+              <li class="boxItem"><a href="#">Second</a></li>
+              <li class="boxItem"><a href="#">Second</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div class="footerNavbar">
+            <div class="leftBox">
+              <a class="logo">CafePOS</a>
+              <div class="languageBox">AZ</div>
+              <div class="currencyBox">EUR</div>
+            </div>
+            <ul class="socialLinksList">
+              <li class="socialLink"><a href="">FB</a></li>
+              <li class="socialLink"><a href="">IG</a></li>
+              <li class="socialLink"><a href="">YB</a></li>
+              <li class="socialLink"><a href="">XX</a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            Copyright © 1999 - 2024 Operating Company, LLC. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

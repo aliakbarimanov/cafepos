@@ -3,11 +3,28 @@
     src: url(../fonts/Inter.ttf);
 }
 
+@font-face {
+    font-family: "Protest";
+    src: url(../fonts/Protest.ttf);
+}
+
 * {
     font-family: "Inter", sans-serif;
 }
 
 .container {
-    width: 92%;
+    width: 1920px;
     margin: 0 auto;
+}
+
+@media(max-width: 1920px){
+    .container{
+        width: 1440px;
+    }
+}
+
+@media(max-width: 1440px){
+    .container{
+        width: 1024px;
+    }
 }
