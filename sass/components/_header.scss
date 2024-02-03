@@ -34,12 +34,12 @@
                     flex-direction: column;
                     gap: 15px;
                     background-color: $secondary;
-                    padding: 20px 0 0 20px;
                     transition: all .3s ease;
                     box-shadow: 2px 0 5px #00000050;
 
-                    .closeBtn{
+                    .closeBtn {
                         width: 100%;
+                        padding: 10px;
                         background-color: transparent;
                         border: none;
                         outline: none;
@@ -47,16 +47,28 @@
                         text-transform: uppercase;
                         font-size: 12px;
                         letter-spacing: 1.5px;
+                        font-weight: 600;
                         cursor: pointer;
                     }
 
-                    a{
+                    a {
                         color: $primary;
                         font-size: 18px;
                         font-weight: 600;
+                        padding: 5px 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #00000020;
+
+                        span {
+                            i {
+                                font-size: 14px;
+                            }
+                        }
                     }
 
-                    &.active{
+                    &.active {
                         width: 25%;
                         opacity: 1;
                         visibility: visible;
@@ -230,6 +242,8 @@
     .header {
         .container {
             .navBar {
+                padding: 0 20px;
+                
                 .navList {
                     gap: 10px;
 
@@ -277,7 +291,7 @@
     .header {
         .container {
             .navBar {
-                padding: 0;
+                padding: 0 20px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -296,6 +310,65 @@
 
                 .menuList {
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        height: 40px;
+
+        .container {
+            .navBar {
+                padding: 0 20px;
+
+                .mobileNavBar {
+                    .mobileMenu {
+                        gap: 10px;
+
+                        a {
+                            font-size: 14px;
+                            padding: 5px 20px;
+
+                            span {
+                                i {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            width: 30%;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .mobileLeft {
+                        .barIcon {
+                            font-size: 16px;
+                        }
+
+                        .mobileLogo {
+                            span {
+                                font-size: 24px;
+
+                                &:last-child {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    .mobileRight {
+                        gap: 15px;
+
+                        a {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }

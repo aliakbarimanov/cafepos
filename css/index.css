@@ -33,6 +33,16 @@
     width: 1024px;
   }
 }
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
 .header {
   width: 100%;
   height: 64px;
@@ -69,12 +79,12 @@
   flex-direction: column;
   gap: 15px;
   background-color: #ffffff;
-  padding: 20px 0 0 20px;
   transition: all 0.3s ease;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3137254902);
 }
 .header .container .navBar .mobileNavBar .mobileMenu .closeBtn {
   width: 100%;
+  padding: 10px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -82,12 +92,21 @@
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1.5px;
+  font-weight: 600;
   cursor: pointer;
 }
 .header .container .navBar .mobileNavBar .mobileMenu a {
   color: #444444;
   font-size: 18px;
   font-weight: 600;
+  padding: 5px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1254901961);
+}
+.header .container .navBar .mobileNavBar .mobileMenu a span i {
+  font-size: 14px;
 }
 .header .container .navBar .mobileNavBar .mobileMenu.active {
   width: 25%;
@@ -226,6 +245,9 @@
 }
 
 @media (max-width: 1920px) {
+  .header .container .navBar {
+    padding: 0 20px;
+  }
   .header .container .navBar .navList {
     gap: 10px;
   }
@@ -254,7 +276,7 @@
 }
 @media (max-width: 1440px) {
   .header .container .navBar {
-    padding: 0;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -270,6 +292,44 @@
   }
   .header .container .navBar .menuList {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: 40px;
+  }
+  .header .container .navBar {
+    padding: 0 20px;
+  }
+  .header .container .navBar .mobileNavBar .mobileMenu {
+    gap: 10px;
+  }
+  .header .container .navBar .mobileNavBar .mobileMenu a {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+  .header .container .navBar .mobileNavBar .mobileMenu a span i {
+    font-size: 12px;
+  }
+  .header .container .navBar .mobileNavBar .mobileMenu.active {
+    width: 30%;
+    opacity: 1;
+    visibility: visible;
+  }
+  .header .container .navBar .mobileNavBar .mobileLeft .barIcon {
+    font-size: 16px;
+  }
+  .header .container .navBar .mobileNavBar .mobileLeft .mobileLogo span {
+    font-size: 24px;
+  }
+  .header .container .navBar .mobileNavBar .mobileLeft .mobileLogo span:last-child {
+    font-size: 18px;
+  }
+  .header .container .navBar .mobileNavBar .mobileRight {
+    gap: 15px;
+  }
+  .header .container .navBar .mobileNavBar .mobileRight a {
+    font-size: 14px;
   }
 }
 .footer {
